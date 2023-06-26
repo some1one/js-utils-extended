@@ -10,6 +10,7 @@
     "module": "dist/some1one-js-utils-extended.esm.js",
     "types": "dist/index.d.ts",
     "sideEffects": false,
+    "private": false,
     "files": [
         "dist"
     ],
@@ -19,7 +20,7 @@
     ],
     "scripts": {
         "build": "npx cross-env NODE_ENV=production npx rollpkg build --noStats",
-        "pub": "npm run build && npm version patch && npm publish"
+        "pub": "npm run build && npm version patch && npm publish --access public"
     },
     "dependencies": {
         "lodash": "^4.17.21",
