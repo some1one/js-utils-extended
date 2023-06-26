@@ -16,7 +16,8 @@
         "types"
     ],
     "scripts": {
-        "build": "npx cross-env NODE_ENV=production npx rollpkg build --noStats"
+        "build": "npx cross-env NODE_ENV=production npx rollpkg build --noStats",
+        "publish": "npm run build && npm version patch && npm publish"
     },
     "dependencies": {
         "lodash": "^4.17.21",
