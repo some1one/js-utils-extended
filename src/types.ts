@@ -15,7 +15,7 @@ export interface ISerializable {
     serialize(): Record<string, SerializableData>;
 }
 
-export interface DataProvider {
+export interface IDataProvider {
     getAll(): Promise<Record<string | number, SerializableData> | SerializableData[]>;
     get<T extends SerializableData = SerializableData>(key: string | number): Promise<T>;
     writeAll(data: Record<string | number, SerializableData> | SerializableData[]): Promise<void>;
