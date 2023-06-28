@@ -1,6 +1,6 @@
 import { IEventEmitter } from "./types";
 
-export abstract class AbsractEventEmitter implements IEventEmitter {
+export abstract class AbstractEventEmitter implements IEventEmitter {
     constructor(maxListeners?: number) {
         this.setMaxListeners(maxListeners || Number.MAX_SAFE_INTEGER);
     }
