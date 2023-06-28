@@ -3,6 +3,7 @@ export interface ILogger {
     error(message: string): void;
     info(message: string): void;
     warn(message: string): void;
+    debug(message: string): void;
 }
 
 export type SerializablePrimitives = string | number | boolean | null | undefined;
