@@ -48,5 +48,5 @@ export interface IDirectoryOperations {
     move(oldPath: string, newPath: string): Promise<void>;
     create(path: string, content?: string | number[]): Promise<void>;
     append(path: string, data: string | number[]): Promise<void>;
-    watch(path: string, callback: (event: string, filename: string) => void): () => void;
+    watch(path: string, callback: (currentContent: string, prevContent: string) => void): () => void;
 }
