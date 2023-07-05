@@ -20,7 +20,7 @@ declare module "lodash" {
          * @param value The value to check.
          * @return Returns true if value is an object, else false.
          */
-        isObject(value: any): value is WithPrototype<UnknownObject & AnyFunction>;
+        isObject(value: any): value is UnknownObject & AnyFunction & WithPrototype<UnknownObject & AnyFunction>;
 
         /**
          * Checks if `value` is object-like. A value is object-like if it's not `null`
